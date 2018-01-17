@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "S2_Header.h"
+#import "S2_header.h"
 
-@implementation Volume
-(id)initWithMin: (int)a max:(int)b step:(int)s {
+@implementation Volume : NSObject 
+- (id)initWithMin: (int)a max:(int)b step:(int)s {
 	self = [super init];
 	if (self != nil) {
 		val = min = a;
@@ -20,22 +20,26 @@
 	return self;
 }
 
-(int)value {
-	return value;
+- (int)value {
+	return val;
 }
 
-(id)up {
+- (id)up {
 	if ((val += step) > max) {
 		val = max;
 	}
 	return self;
 }
 
-(id)down {
+- (id)down {
 	if ((val -= step < min)) {
 		val = min;
 	}
 	return self;
+}
+
+- (void)print {
+	puts("hello\n");
 }
 @end
 

@@ -30,6 +30,7 @@
 		49072BE6200E4FBE00B6EC22 /* BasicReview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicReview.m; sourceTree = "<group>"; };
 		49072BE8200F780C00B6EC22 /* S2_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S2_Header.h; sourceTree = "<group>"; };
 		49072BE9200F782B00B6EC22 /* S2_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S2_Basic.m; sourceTree = "<group>"; };
+		49072BF4200F7E8D00B6EC22 /* BasicReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicReview.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		49072BCE200E4EFA00B6EC22 /* Basic Review */ = {
 			isa = PBXGroup;
 			children = (
+				49072BF4200F7E8D00B6EC22 /* BasicReview.h */,
 				49072BE6200E4FBE00B6EC22 /* BasicReview.m */,
 				49072BCF200E4EFA00B6EC22 /* S2 */,
 				49072BD0200E4EFA00B6EC22 /* S3 */,

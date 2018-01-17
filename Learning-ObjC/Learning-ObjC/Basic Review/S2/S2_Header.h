@@ -9,14 +9,15 @@
 #ifndef S2_Header_h
 #define S2_Header_h
 
-@interface Volume: NSObject {
+@interface Volume : NSObject {
 	int val;
 	int min, max, step;
 }
-(id)initWithMin:(int)a max:(int)b step:(int)s;
-(int)value;
-(id)up;
-(id)down;
+- (id)initWithMin:(int)a max:(int)b step:(int)s;
+- (int)value;
+- (id)up;
+- (id)down;
+- (void)print;
 @end
 
 #endif /* S2_header_h */
