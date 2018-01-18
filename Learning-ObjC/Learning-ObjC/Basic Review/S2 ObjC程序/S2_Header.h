@@ -1,27 +1,33 @@
 //
-//  BasicReview.h
+//  S2_header.h
 //  Learning-ObjC
 //
 //  Created by 徐伟达 on 2018/1/17.
 //  Copyright © 2018年 徐伟达. All rights reserved.
 //
 /*---------------------------------------------------------------------
-							任务表
+                            第二章 任务表
  -----------------------------------------------------------------------
  
  ---------------------------------------------------------------------*/
-#ifndef BasicReview_h
-#define BasicReview_h
-#import "S2_Header.h"
+#ifndef S2_Header_h
+#define S2_Header_h
 //---------------------------------------------------------------------
-//                             类型定义
+//                           ObjC类定义
 //---------------------------------------------------------------------
-enum BasicReview {
-	v1, v2, v3, v4, v5, v6, v7, v8, v9, v10
-};
-//---------------------------------------------------------------------
-//                     第二章 ObjC程序 p17~36
-//---------------------------------------------------------------------
-void basicReviewSelector(enum BasicReview section);
+@interface Volume : NSObject {
+	int val;
+	int min, max, step;
+}
+- (id)initWithMin:(int)a max:(int)b step:(int)s;
+- (int)value;
+- (id)up;
+- (id)down;
+- (void)print;
+@end
 
-#endif /* BasicReview_h */
+//---------------------------------------------------------------------
+//                           测试函数
+//---------------------------------------------------------------------
+void S2Tester(void);
+#endif /* S2_header_h */

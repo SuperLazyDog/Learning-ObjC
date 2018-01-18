@@ -74,7 +74,7 @@
 			children = (
 				49072BF4200F7E8D00B6EC22 /* BasicReview.h */,
 				49072BE6200E4FBE00B6EC22 /* BasicReview.m */,
-				49072BCF200E4EFA00B6EC22 /* S2 */,
+				49072BCF200E4EFA00B6EC22 /* S2 ObjC程序 */,
 				49072BD0200E4EFA00B6EC22 /* S3 */,
 				49072BD1200E4EFA00B6EC22 /* S4 */,
 				49072BD2200E4EFA00B6EC22 /* S5 */,
@@ -97,13 +97,13 @@
 			path = "Basic Review";
 			sourceTree = "<group>";
 		};
-		49072BCF200E4EFA00B6EC22 /* S2 */ = {
+		49072BCF200E4EFA00B6EC22 /* S2 ObjC程序 */ = {
 			isa = PBXGroup;
 			children = (
 				49072BE8200F780C00B6EC22 /* S2_Header.h */,
 				49072BE9200F782B00B6EC22 /* S2_Basic.m */,
 			);
-			path = S2;
+			path = "S2 ObjC程序";
 			sourceTree = "<group>";
 		};
 		49072BD0200E4EFA00B6EC22 /* S3 */ = {
