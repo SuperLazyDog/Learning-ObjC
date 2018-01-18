@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BasicReview.h"
-// TODO: 完成这个仓库的大体结构模板
+
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 	    // insert code here...
