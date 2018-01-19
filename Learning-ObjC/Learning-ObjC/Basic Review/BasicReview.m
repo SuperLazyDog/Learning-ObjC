@@ -23,10 +23,13 @@
 //------------------------------------------------
 void basicReviewSelector(enum BasicReview section) {
 	switch (section) {
-		case v1:
+		case S1:
 			break;
-		case v2:
+		case S2:
 			S2Tester();
+			break;
+		case S3:
+			S3Tester();
 			break;
 		default:
 			break;

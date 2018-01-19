@@ -36,5 +36,6 @@ int main(int argc, const char * argv[]) {
 //                           声明函数的实现
 //---------------------------------------------------------------------
 void basicReviewRunner(void) {
-	basicReviewSelector(v2);
+//	basicReviewSelector(S2);
+	basicReviewSelector(S3);
 }
