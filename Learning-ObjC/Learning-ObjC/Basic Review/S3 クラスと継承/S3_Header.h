@@ -14,6 +14,7 @@
 //---------------------------------------------------------------------
 //                           类型定义
 //---------------------------------------------------------------------
+// 继承
 @interface S3_Basic : NSObject {
 	
 }
@@ -23,7 +24,21 @@
 @interface S3_Basic_sub : S3_Basic {
 	
 }
-- (void)printHello;
+- (void)printHello; // 重载
+@end
+
+@interface S3_Basic_sub_sub : S3_Basic_sub {
+	
+}
+- (void)printHello; // 重载
+@end
+// 构造函数
+@interface S3_Basic_Init : NSObject {
+	char *str;
+	int length;
+}
+- (id)initWithLength: (int)length;
+- (int)getStrLength;
 @end
 //---------------------------------------------------------------------
 //                           测试函数
