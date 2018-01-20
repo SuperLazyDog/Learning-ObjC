@@ -31,6 +31,9 @@ void basicReviewSelector(enum BasicReview section) {
 		case S3:
 			S3Tester();
 			break;
+		case S4:
+			S4Tester();
+			break;
 		default:
 			break;
 	}

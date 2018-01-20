@@ -11,6 +11,7 @@
 		49072BE7200E4FBE00B6EC22 /* BasicReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 49072BE6200E4FBE00B6EC22 /* BasicReview.m */; };
 		49072BEA200F782B00B6EC22 /* S2_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49072BE9200F782B00B6EC22 /* S2_Basic.m */; };
 		49CFD18120125F13001F9471 /* S3_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD18020125F13001F9471 /* S3_Basic.m */; };
+		49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1822013BCCA001F9471 /* S4_Basic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,8 @@
 		49072BE9200F782B00B6EC22 /* S2_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S2_Basic.m; sourceTree = "<group>"; };
 		49072BF4200F7E8D00B6EC22 /* BasicReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicReview.h; sourceTree = "<group>"; };
 		49CFD18020125F13001F9471 /* S3_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3_Basic.m; sourceTree = "<group>"; };
+		49CFD1822013BCCA001F9471 /* S4_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S4_Basic.m; sourceTree = "<group>"; };
+		49CFD1842013BCE7001F9471 /* S4_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S4_Header.h; sourceTree = "<group>"; };
 		49E6405920125ECB00C76E43 /* S3_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3_Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +82,7 @@
 				49072BE6200E4FBE00B6EC22 /* BasicReview.m */,
 				49072BCF200E4EFA00B6EC22 /* S2 ObjC程序 */,
 				49072BD0200E4EFA00B6EC22 /* S3 クラスと継承 */,
-				49072BD1200E4EFA00B6EC22 /* S4 */,
+				49072BD1200E4EFA00B6EC22 /* S4 オブジェクトの型と動的結合 */,
 				49072BD2200E4EFA00B6EC22 /* S5 */,
 				49072BD3200E4EFA00B6EC22 /* S6 */,
 				49072BD4200E4EFA00B6EC22 /* S7 */,
@@ -118,11 +121,14 @@
 			path = "S3 クラスと継承";
 			sourceTree = "<group>";
 		};
-		49072BD1200E4EFA00B6EC22 /* S4 */ = {
+		49072BD1200E4EFA00B6EC22 /* S4 オブジェクトの型と動的結合 */ = {
 			isa = PBXGroup;
 			children = (
+				49CFD1842013BCE7001F9471 /* S4_Header.h */,
+				49CFD1822013BCCA001F9471 /* S4_Basic.m */,
 			);
-			path = S4;
+			name = "S4 オブジェクトの型と動的結合";
+			path = "S4 オブジェクトの型と動的結合";
 			sourceTree = "<group>";
 		};
 		49072BD2200E4EFA00B6EC22 /* S5 */ = {
@@ -294,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */,
 				49CFD18120125F13001F9471 /* S3_Basic.m in Sources */,
 				49072BEA200F782B00B6EC22 /* S2_Basic.m in Sources */,
 				49072BE7200E4FBE00B6EC22 /* BasicReview.m in Sources */,

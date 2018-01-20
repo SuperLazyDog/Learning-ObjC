@@ -37,5 +37,6 @@ int main(int argc, const char * argv[]) {
 //---------------------------------------------------------------------
 void basicReviewRunner(void) {
 //	basicReviewSelector(S2);
-	basicReviewSelector(S3);
+//	basicReviewSelector(S3);
+	basicReviewSelector(S4);
 }
