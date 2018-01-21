@@ -15,7 +15,20 @@
 //---------------------------------------------------------------------
 //                           类型定义
 //---------------------------------------------------------------------
+//动态结合与多态
+@interface S4_A : NSObject {
+	
+}
+- (void)getLocationOfHierarchy;
+- (void)getLocationOfHierarchy:(BOOL)isneedHello;
+@end
 
+@interface S4_B : S4_A {
+	
+}
+- (void)getLocationOfHierarchy; //重载
+- (void)getLocationOfHierarchy:(BOOL)isneedHello; //重载
+@end
 //---------------------------------------------------------------------
 //                           测试函数
 //---------------------------------------------------------------------
