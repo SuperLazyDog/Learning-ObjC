@@ -32,7 +32,7 @@
 - (void)getLocationOfHierarchy; //重载
 - (void)getLocationOfHierarchy:(BOOL)isneedHello; //重载
 @end
-
+static char *S4_Str = "还没初始化";
 //类型宣言, 实例变量的封装
 @interface S4_C : S4_B {
 @public
@@ -42,6 +42,7 @@
 }
 - (S4_C *)init;
 - (void)printSelfName;
++ (void)initialize;
 @end
 
 //---------------------------------------------------------------------

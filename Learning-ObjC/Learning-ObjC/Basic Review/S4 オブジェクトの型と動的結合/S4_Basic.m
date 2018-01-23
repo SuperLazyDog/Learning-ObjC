@@ -55,6 +55,10 @@
 	}
 	return self;
 }
++ (void)initialize {
+	S4_Str = "S4_C 已初始化";
+	puts(S4_Str);
+}
 @end
 
 //------------------------------------------------
@@ -76,12 +80,14 @@ void S4Tester(void) {
 	[aTemp getLocationOfHierarchy];
 	[aTemp getLocationOfHierarchy:NO];
 	[aTemp getLocationOfHierarchy:YES];
-	
+
 	id bTemp = [[S4_B alloc] init];
 	[bTemp getLocationOfHierarchy];
 	[bTemp getLocationOfHierarchy:NO];
 	[bTemp getLocationOfHierarchy:YES];
 	
+	[S4_C self]; // 什么都不做，只是初始化类
 	S4_C *cTemp = [[S4_C alloc] init];
 	[cTemp->temp printHello];
+	
 }
