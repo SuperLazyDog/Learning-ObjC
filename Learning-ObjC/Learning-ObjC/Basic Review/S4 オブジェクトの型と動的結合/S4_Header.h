@@ -15,6 +15,7 @@
 //---------------------------------------------------------------------
 //                           类型定义
 //---------------------------------------------------------------------
+@class S3_Basic;
 //动态结合与多态
 @interface S4_A : NSObject {
 	
@@ -28,6 +29,13 @@
 }
 - (void)getLocationOfHierarchy; //重载
 - (void)getLocationOfHierarchy:(BOOL)isneedHello; //重载
+@end
+
+//类型宣言
+@interface S4_C : S4_B {
+	S3_Basic *temp;
+}
+- (void)printSelfName;
 @end
 //---------------------------------------------------------------------
 //                           测试函数
