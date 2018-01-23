@@ -15,6 +15,7 @@
 //---------------------------------------------------------------------
 //                           类型定义
 //---------------------------------------------------------------------
+#import "S3_Header.h"
 @class S3_Basic;
 //动态结合与多态
 @interface S4_A : NSObject {
@@ -25,18 +26,24 @@
 @end
 
 @interface S4_B : S4_A {
-	
+@protected
+	int sample_S4_B;
 }
 - (void)getLocationOfHierarchy; //重载
 - (void)getLocationOfHierarchy:(BOOL)isneedHello; //重载
 @end
 
-//类型宣言
+//类型宣言, 实例变量的封装
 @interface S4_C : S4_B {
+@public
 	S3_Basic *temp;
+@private
+	int test;
 }
+- (S4_C *)init;
 - (void)printSelfName;
 @end
+
 //---------------------------------------------------------------------
 //                           测试函数
 //---------------------------------------------------------------------

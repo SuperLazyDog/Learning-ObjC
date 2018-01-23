@@ -43,12 +43,20 @@
 }
 @end
 
-//类型宣言
+//类型宣言, 实例变量的封装
 @implementation S4_C
 - (void)printSelfName {
 	temp = [[S3_Basic alloc] init];
 }
+- (S4_C *)init {
+	self = [super init];
+	if (self != nil) {
+		temp = [[S3_Basic alloc] init];
+	}
+	return self;
+}
 @end
+
 //------------------------------------------------
 //                   函数声明
 //------------------------------------------------
@@ -74,4 +82,6 @@ void S4Tester(void) {
 	[bTemp getLocationOfHierarchy:NO];
 	[bTemp getLocationOfHierarchy:YES];
 	
+	S4_C *cTemp = [[S4_C alloc] init];
+	[cTemp->temp printHello];
 }
