@@ -12,6 +12,7 @@
 		49072BEA200F782B00B6EC22 /* S2_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49072BE9200F782B00B6EC22 /* S2_Basic.m */; };
 		49CFD18120125F13001F9471 /* S3_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD18020125F13001F9471 /* S3_Basic.m */; };
 		49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1822013BCCA001F9471 /* S4_Basic.m */; };
+		49CFD1862017EF86001F9471 /* S7_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1852017EF86001F9471 /* S7_Basic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		49CFD18020125F13001F9471 /* S3_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3_Basic.m; sourceTree = "<group>"; };
 		49CFD1822013BCCA001F9471 /* S4_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S4_Basic.m; sourceTree = "<group>"; };
 		49CFD1842013BCE7001F9471 /* S4_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S4_Header.h; sourceTree = "<group>"; };
+		49CFD1852017EF86001F9471 /* S7_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S7_Basic.m; sourceTree = "<group>"; };
+		49CFD1872017EF91001F9471 /* S7_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S7_Header.h; sourceTree = "<group>"; };
 		49E6405920125ECB00C76E43 /* S3_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3_Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +151,8 @@
 		49072BD4200E4EFA00B6EC22 /* S7 */ = {
 			isa = PBXGroup;
 			children = (
+				49CFD1872017EF91001F9471 /* S7_Header.h */,
+				49CFD1852017EF86001F9471 /* S7_Basic.m */,
 			);
 			path = S7;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			files = (
 				49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */,
 				49CFD18120125F13001F9471 /* S3_Basic.m in Sources */,
+				49CFD1862017EF86001F9471 /* S7_Basic.m in Sources */,
 				49072BEA200F782B00B6EC22 /* S2_Basic.m in Sources */,
 				49072BE7200E4FBE00B6EC22 /* BasicReview.m in Sources */,
 				49072BC8200E404700B6EC22 /* main.m in Sources */,
