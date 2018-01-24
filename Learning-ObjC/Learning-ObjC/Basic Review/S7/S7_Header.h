@@ -20,7 +20,7 @@
 @property int age;
 - (id)initWithName:(char *)name;
 @property int dynmicTest;
-@property int nameTest;
+@property(setter=SetNameTestBySelf:, getter=getNameTestBySelf) int nameTest;
 @end
 
 //---------------------------------------------------------------------
