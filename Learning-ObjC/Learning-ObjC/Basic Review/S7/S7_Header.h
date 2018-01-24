@@ -14,7 +14,14 @@
 //---------------------------------------------------------------------
 //                           类型定义
 //---------------------------------------------------------------------
-
+@interface S7_A : NSObject { // 测试声明属性
+}
+@property(readonly) char *name;
+@property int age;
+- (id)initWithName:(char *)name;
+@property int dynmicTest;
+@property int nameTest;
+@end
 
 //---------------------------------------------------------------------
 //                           测试函数

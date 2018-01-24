@@ -15,7 +15,24 @@
 //------------------------------------------------
 //                    类定义
 //------------------------------------------------
-
+@implementation S7_A
+@synthesize name, age;
+@synthesize nameTest = NAMETEST;
+- (id)initWithName:(char *)name {
+	self = [super init];
+	if (self != NULL) {
+		self->name = name;
+	}
+	return self;
+}
+@dynamic dynmicTest;
+- (int)dynmicTest {
+	return age;
+}
+- (void)setDynmicTest:(int)dynmicTest {
+	age = dynmicTest;
+}
+@end
 //------------------------------------------------
 //                   函数声明
 //------------------------------------------------
@@ -31,4 +48,10 @@ void S7Tester(void) {
 	puts("-----------------------------------------");
 	puts("                  S7");
 	puts("-----------------------------------------");
+	//声明属性
+	S7_A *temp = [[S7_A alloc] initWithName:"weida"];
+	[temp setAge:20];
+	[temp setDynmicTest:1];
+	[temp setDynmicTest:24];
+	printf("name: %s, age: %d\n", [temp name], [temp age]);
 }
