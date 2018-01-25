@@ -21,6 +21,8 @@
 - (id)initWithName:(char *)name;
 @property int dynmicTest;
 @property(setter=SetNameTestBySelf:, getter=getNameTestBySelf) int nameTest;
+- (void)showInfo;
+- (void)showInfo: isUpcase;
 @end
 
 //---------------------------------------------------------------------

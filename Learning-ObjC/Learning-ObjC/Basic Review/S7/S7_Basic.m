@@ -32,6 +32,12 @@
 - (void)setDynmicTest:(int)dynmicTest {
 	age = dynmicTest;
 }
+- (void)showInfo:(id)isUpcase {
+	printf("showInfo: name: %s, age: %d\n", name, age);
+}
+- (void)showInfo {
+	printf("showInfo: name: %s, age: %d\n", name, age);
+}
 @end
 //------------------------------------------------
 //                   函数声明
@@ -54,4 +60,5 @@ void S7Tester(void) {
 	[temp setDynmicTest:1];
 	[temp setDynmicTest:24];
 	printf("name: %s, age: %d\n", [temp name], [temp age]);
+	[temp showInfo];
 }
