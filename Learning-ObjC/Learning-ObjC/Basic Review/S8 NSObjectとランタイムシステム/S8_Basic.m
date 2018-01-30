@@ -48,4 +48,11 @@ void S8Tester(void) {
 	printf("+instance能不能回应getTwo: %s\n", [S8_A instanceMethodForSelector:@selector(getTwo)] ? "OK":"NO");
 	
 	printf("[[NSObject class] isKindOfClass: [NSObject class = %s\n", [[NSObject class] isKindOfClass: [NSObject class]] ? "YES":"NO" );
+	
+//	target-action paradigm 目标-动作机制
+//	IBOutlet NSbutton *theButton; // IBOutlet也是macro，实际为空白
+//	//同时声明多个
+//	IBOutletCollection(NSButton) NSArray *buttons;// IBOutletCollection(NSButton)编译后也是空白
+//	//声明属性
+//	@property(weak) IBOutlet NSButton *okButton;//都有weak
 }
