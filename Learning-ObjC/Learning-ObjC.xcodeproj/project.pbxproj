@@ -14,6 +14,7 @@
 		49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1822013BCCA001F9471 /* S4_Basic.m */; };
 		49CFD1862017EF86001F9471 /* S7_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1852017EF86001F9471 /* S7_Basic.m */; };
 		49CFD18F201C00A9001F9471 /* S8_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD1892019A68C001F9471 /* S8_Basic.m */; };
+		49CFD19220243DA4001F9471 /* S9_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD19120243DA4001F9471 /* S9_Basic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		49CFD1872017EF91001F9471 /* S7_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S7_Header.h; sourceTree = "<group>"; };
 		49CFD1882019A677001F9471 /* S8_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S8_Header.h; sourceTree = "<group>"; };
 		49CFD1892019A68C001F9471 /* S8_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S8_Basic.m; sourceTree = "<group>"; };
+		49CFD19020243D93001F9471 /* S9_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S9_Header.h; sourceTree = "<group>"; };
+		49CFD19120243DA4001F9471 /* S9_Basic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S9_Basic.m; sourceTree = "<group>"; };
 		49E6405920125ECB00C76E43 /* S3_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3_Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +95,8 @@
 				49072BD2200E4EFA00B6EC22 /* S5 */,
 				49072BD3200E4EFA00B6EC22 /* S6 */,
 				49072BD4200E4EFA00B6EC22 /* S7 宣言プロパティ */,
-				49072BD5200E4EFA00B6EC22 /* S8 NSObjectとランタイムシステム */,
-				49072BD6200E4EFA00B6EC22 /* S9 */,
+				49072BD5200E4EFA00B6EC22 /* S8 NSObject */,
+				49072BD6200E4EFA00B6EC22 /* S9 Foundationの重要なクラス */,
 				49072BD7200E4EFA00B6EC22 /* S10 */,
 				49072BD8200E4EFA00B6EC22 /* S11 */,
 				49072BD9200E4EFA00B6EC22 /* S12 */,
@@ -161,20 +164,22 @@
 			path = "S7 宣言プロパティ";
 			sourceTree = "<group>";
 		};
-		49072BD5200E4EFA00B6EC22 /* S8 NSObjectとランタイムシステム */ = {
+		49072BD5200E4EFA00B6EC22 /* S8 NSObject */ = {
 			isa = PBXGroup;
 			children = (
 				49CFD1882019A677001F9471 /* S8_Header.h */,
 				49CFD1892019A68C001F9471 /* S8_Basic.m */,
 			);
-			path = "S8 NSObjectとランタイムシステム";
+			path = "S8 NSObject";
 			sourceTree = "<group>";
 		};
-		49072BD6200E4EFA00B6EC22 /* S9 */ = {
+		49072BD6200E4EFA00B6EC22 /* S9 Foundationの重要なクラス */ = {
 			isa = PBXGroup;
 			children = (
+				49CFD19020243D93001F9471 /* S9_Header.h */,
+				49CFD19120243DA4001F9471 /* S9_Basic.m */,
 			);
-			path = S9;
+			path = "S9 Foundationの重要なクラス";
 			sourceTree = "<group>";
 		};
 		49072BD7200E4EFA00B6EC22 /* S10 */ = {
@@ -313,6 +318,7 @@
 			files = (
 				49CFD18F201C00A9001F9471 /* S8_Basic.m in Sources */,
 				49CFD1832013BCCA001F9471 /* S4_Basic.m in Sources */,
+				49CFD19220243DA4001F9471 /* S9_Basic.m in Sources */,
 				49CFD18120125F13001F9471 /* S3_Basic.m in Sources */,
 				49CFD1862017EF86001F9471 /* S7_Basic.m in Sources */,
 				49072BEA200F782B00B6EC22 /* S2_Basic.m in Sources */,
