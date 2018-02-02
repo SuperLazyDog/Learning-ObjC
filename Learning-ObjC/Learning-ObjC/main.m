@@ -40,5 +40,6 @@ void basicReviewRunner(void) {
 //	basicReviewSelector(S3);
 //	basicReviewSelector(S4);
 //	basicReviewSelector(S7);
-	basicReviewSelector(S8);
+//	basicReviewSelector(S8);
+	basicReviewSelector(S9);
 }
