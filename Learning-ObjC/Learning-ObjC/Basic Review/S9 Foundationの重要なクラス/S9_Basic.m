@@ -29,4 +29,7 @@ void S9Tester(void) {
 	puts("-----------------------------------------");
 	puts("                  S9");
 	puts("-----------------------------------------");
+	NSString *stringTemp = [NSString stringWithFormat: @"%d + %d = %d\n", 12, 12, 12 + 12];
+	printf("%s" ,[stringTemp cStringUsingEncoding: NSASCIIStringEncoding]);
+	
 }
