@@ -29,7 +29,12 @@ void S9Tester(void) {
 	puts("-----------------------------------------");
 	puts("                  S9");
 	puts("-----------------------------------------");
-	NSString *stringTemp = [NSString stringWithFormat: @"%d + %d = %d\n", 12, 12, 12 + 12];
-	printf("%s" ,[stringTemp cStringUsingEncoding: NSASCIIStringEncoding]);
+	NSString *stringTemp = [NSString stringWithFormat: @"%d + %d = %d", 12, 12, 12 + 12];
+	printf("%s\n" ,[stringTemp cStringUsingEncoding: NSASCIIStringEncoding]); //获取c字符串
 	
+	// 路径相关
+	printf("%s\n", [NSHomeDirectory() cStringUsingEncoding:NSASCIIStringEncoding]); //获取根路径
+	printf("%s\n", [[@"~/sample/math.m" stringByDeletingPathExtension] fileSystemRepresentation]);
+	char * cStrTemp = (char *)calloc(100, sizeof(char));
+	[@"~/sample/math.m" getFileSystemRepresentation:cStrTemp maxLength:100];
 }
