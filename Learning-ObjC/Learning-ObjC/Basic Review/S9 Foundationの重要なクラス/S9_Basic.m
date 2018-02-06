@@ -37,4 +37,5 @@ void S9Tester(void) {
 	printf("%s\n", [[@"~/sample/math.m" stringByDeletingPathExtension] fileSystemRepresentation]);
 	char * cStrTemp = (char *)calloc(100, sizeof(char));
 	[@"~/sample/math.m" getFileSystemRepresentation:cStrTemp maxLength:100];
+	printf("description: %s\n", [[stringTemp description] cStringUsingEncoding:NSASCIIStringEncoding]);
 }
